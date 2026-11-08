@@ -16,6 +16,9 @@ body {
 
 header {
     background-color: var(--cabecalho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav {
@@ -26,4 +29,31 @@ nav {
 
 nav a {
     color: #ffffff;
+}
+
+.alternar-tema {
+    position: absolute;
+    opacity: 0;
+}
+
+.botao-tema {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.alternar-tema:focus-visible + .botao-tema {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+:root:has(#modo-escuro:checked) {
+    --fundo: #0f1b2d;
+    --card: #17263d;
+    --texto: #e6edf7;
+    --destaque: #8ab4ff;
+    --cabecalho: #0a1424;
 }
