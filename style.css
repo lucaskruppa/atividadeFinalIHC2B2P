@@ -21,6 +21,10 @@ header {
     align-items: center;
 }
 
+footer {
+    text-align: center;
+}
+
 nav {
     display: flex;
     gap: 1.5rem;
@@ -29,6 +33,12 @@ nav {
 
 nav a {
     color: #ffffff;
+}
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .alternar-tema {
@@ -56,4 +66,43 @@ nav a {
     --texto: #e6edf7;
     --destaque: #8ab4ff;
     --cabecalho: #0a1424;
+}
+
+.destaque {
+    padding: 2rem 0;
+}
+
+.destaque h1 {
+    font-size: 2rem;
+    color: var(--destaque);
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1 1 18rem;
+    padding: 1.5rem;
+    background-color: var(--card);
+    color: var(--texto);
+    border: 2px solid var(--destaque);
+    border-radius: 0.75rem;
+    text-decoration: none;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--destaque);
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.card:focus-visible {
+    outline: 3px solid var(--destaque);
+    outline-offset: 3px;
 }
