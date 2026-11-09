@@ -37,6 +37,16 @@ nav {
 nav a {
     color: #ffffff;
     padding: 0.5rem 0;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a[aria-current="page"] {
+    font-weight: bold;
+    border-bottom: 3px solid #ffffff;
 }
 
 main {
