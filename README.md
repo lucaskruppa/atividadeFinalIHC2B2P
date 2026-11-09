@@ -27,6 +27,7 @@ Site com instruções simples para resolver problemas comuns de conexão com a i
 - **Sem becos sem saída:** toda página termina com um aviso para procurar o provedor quando nada resolver.
 - **Feedback visual:** os cards e links reagem ao passar o mouse.
 - **Modo escuro:** o usuário escolhe o tema que for mais confortável.
+- **Triagem inicial:** ambas as páginas de instruções incluem um card com diagnóstico inicial para o usuário seguir.
 
 ### Acessibilidade
 - Idioma declarado (`lang="pt-BR"`) para leitores de tela.
