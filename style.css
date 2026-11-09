@@ -23,6 +23,7 @@ header {
 
 footer {
     text-align: center;
+    padding: 1.5rem 1rem;
 }
 
 nav {
@@ -72,7 +73,7 @@ main {
     padding: 2rem 0;
 }
 
-.destaque h1 {
+.titulo-pagina h1, .destaque h1 {
     font-size: 2rem;
     color: var(--destaque);
 }
@@ -105,4 +106,12 @@ main {
 .card:focus-visible {
     outline: 3px solid var(--destaque);
     outline-offset: 3px;
+}
+
+.aviso {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--card);
+    border-left: 6px solid var(--destaque);
+    border-radius: 0.5rem;
 }
